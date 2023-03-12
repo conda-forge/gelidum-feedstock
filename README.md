@@ -1,11 +1,11 @@
-About gelidum
-=============
+About gelidum-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gelidum-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/diegojromerolopez/gelidum
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gelidum-feedstock/blob/main/LICENSE.txt)
 
 Summary: Freeze your objects in Python
 
