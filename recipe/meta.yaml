@@ -6,27 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0853e0b7802626b1cf8f3ff8e1d08ee65c9925f4a62d089684f55c9ff1d2b75e
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
     - gelidum
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - python -m unittest discover -v gelidum
