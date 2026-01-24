@@ -1,5 +1,5 @@
 {% set name = "gelidum" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0407c9f1b30ae122c48f55794411d29b8323f9c482663aa2e435dd54768ef83
+  sha256: 7979f7eaeac696cea51c25fe31e33a4bc06ec7952de0ecad593cfa8a7f38d783
 
 build:
   noarch: python
